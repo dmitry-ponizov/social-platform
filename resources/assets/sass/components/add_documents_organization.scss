@@ -1,0 +1,240 @@
+.documents {
+  width: 100%;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 0.625rem;
+  padding: 1.5625rem;
+  border-top: 2px solid #5B8F47;
+  margin-bottom: 1.25rem;
+
+  &-view {
+    display: flex;
+    justify-content: space-between;
+
+    &--block{
+      margin-right: 0.3125rem;
+
+      .image_wrap{
+        display: flex;
+        transition: 0.3s ease all;
+        padding: 7px;
+        a{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &--file {
+      display: flex;
+      .link {
+        width: 100%;
+        height: 100%;
+      }
+
+      .pdf {
+        display: flex;
+        width: 70px;
+        height: 90px;
+        background: url("/uploads/defaults/icons/pdf.png") no-repeat center center;
+        background-size: contain;
+      }
+      .doc {
+        display: flex;
+        width: 70px;
+        height: 90px;
+        background: url("/uploads/defaults/icons/doc.png") no-repeat center center;
+        background-size: contain;
+      }
+      img {
+        width: 60px;
+        height: 70px;
+      }
+      .elements {
+        display: flex;
+        justify-content: space-around;
+        opacity: 0;
+        transition: 0.3s ease all;
+        margin-top: 0.3125rem;
+        color: $main-color;
+
+        label {
+          cursor: pointer;
+          &:hover {
+            color: #E41937;
+          }
+        }
+        i {
+          font-size: 16px;
+          color: $main-color;
+
+          transition: 0.3s ease all;
+
+        }
+      }
+      :hover {
+        .elements {
+          opacity: 1;
+        }
+          .documents-view--block{
+           .image_wrap{
+             outline: 1px solid $main-color;
+
+           }
+
+          }
+
+      }
+    }
+  }
+
+  &-add {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #5B8F47;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &-label {
+    margin-right: 0.3125rem;
+    font-size: 16px;
+    font-weight: normal;
+    color: #6f6f6f;
+  }
+  &-form {
+    width: 100%;
+    margin-top: 15px;
+    .text-danger {
+      display: block;
+      font-size: 13px;
+      color: red;
+    }
+    &--buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 1.25rem;
+
+      a {
+        margin-right: 30px;
+        color: $main-color;
+
+        &:hover {
+          color: $color-red;
+        }
+      }
+      .ui {
+        &.secondary {
+          margin-right: 0;
+        }
+      }
+    }
+    &--title {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        min-width: 500px;
+        color: #333333;
+        border: solid #ddd;
+        outline: none;
+        border-width: 0 0 1px 0;
+        font-size: 16px;
+      }
+    }
+
+    &--image {
+      margin-top: 1.5625rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .block {
+        min-width: 300px;
+        display: flex;
+        justify-content: flex-end;
+
+        #result_images {
+          display: flex;
+          align-items: center;
+          div {
+            margin-right: 0.625rem;
+            .preview {
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+        }
+
+      }
+
+      label {
+        margin-bottom: 0;
+      }
+      input {
+        width: 0.625rem;
+        zoom: 1.5;
+        margin-top: 0;
+      }
+      .statement_photos {
+        border: 1px solid #d4d4d4;
+        cursor: pointer;
+        height: 96px;
+        margin: 0;
+        position: relative;
+        width: 96px;
+
+        &:before {
+          background: #dedede;
+          bottom: 0;
+          content: "";
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 2px;
+          margin-top: 47px;
+          width: 24px;
+        }
+        &:after {
+          background: #dedede;
+          bottom: 0;
+          content: "";
+          height: 24px;
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 2px;
+        }
+
+        &:hover {
+          border: 2px solid darkgrey;
+        }
+      }
+    }
+    .constraints {
+      display: flex;
+      margin-top: 0.3125rem;
+      justify-content: flex-end;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        span {
+          font-size: 0.625rem;
+          display: block;
+          color: rgba(78, 70, 70, 0.87);
+        }
+      }
+
+    }
+  }
+
+}
+
+

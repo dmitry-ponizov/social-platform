@@ -1,0 +1,26 @@
+.substatements {
+  margin-top: 20px;
+  label{
+    font-size: 16px;
+    font-weight: normal;
+    color: #6f6f6f;
+  }
+  &-block {
+    margin-top: 20px;
+    &--element {
+      display: flex;
+      justify-content: space-between;
+      div{
+        font-size: 16px;
+      }
+      a{
+        color: $main-color;
+        font-style: italic;
+
+        &:hover{
+          color: $color-red;
+        }
+      }
+    }
+  }
+}

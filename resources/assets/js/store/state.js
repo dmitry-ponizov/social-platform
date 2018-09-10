@@ -1,0 +1,33 @@
+export default {
+    userData:[],
+    lang:{},
+    auth:{},
+    acceptedCategories:{},
+    categories:{},
+    saveBtn:false,
+    routes:{},
+    roles:{},
+    needyUsers:{},
+    userStatements:{},
+    settings:{},
+    statements:{},
+    pagination:{},
+    needy_pages:{},
+    statementsList:{},
+    statements_pages:{},
+    statementAccList:{},
+    statementAccPages:{},
+    statementClosedList:{},
+    statementClosedPages:{},
+    orgAccCategories:{},
+    historyList:{},
+    historyPages:{},
+    historyStatementList:{},
+    historyStatementPages:{},
+    locale:'',
+    event: {},
+    loadData:{},
+    allCategories: {}
+
+
+}

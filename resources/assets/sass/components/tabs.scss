@@ -1,0 +1,20 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .active {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: #1B1C1D;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.95);
+  }
+
+  a {
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: #6f6f6f;
+  }
+
+}

@@ -1,0 +1,122 @@
+/*  Main page quick donate */
+
+.quick_donate {
+  margin-top: 20px;
+  //background-image: url(/uploads/defaults/bg1.jpg);
+  position: relative;
+  .donate-form-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    @media(max-width:620px){
+      width:100%;
+
+    }
+    .donate_form {
+      width: 58%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 60px 40px;
+      @media(max-width:1024px){
+        width:100%;
+        padding: 15px;
+      }
+
+      h3 {
+        color: #5B8F47;
+        font-size: 24px;
+        font-weight: 900;
+        position: relative;
+
+        &:before {
+          bottom: -12px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 50px;
+          background-color: #5B8F47;
+        }
+
+      }
+
+      .donate_selects {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        @media(max-width:620px){
+          display: block;
+        }
+        div{
+            width: 47%;
+          @media(max-width:620px){
+            width: 100%;
+          }
+        }
+        select {
+          background: #fff;
+          height: 45px;
+        }
+
+      }
+      .sum_container {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:620px){
+          display: block;
+          margin-top: 0;
+        }
+        div{
+          width: 47%;
+          @media(max-width:620px){
+            width: 100%;
+          }
+        }
+        select, input {
+          background: #fff;
+          height: 45px;
+        }
+        input {
+         width: 100%;
+          padding: 10px;
+          margin-top: 2px;
+          height: 45px;
+          border: 1px solid rgba(34, 36, 38, 0.15);
+          border-radius: 5px;
+
+          &:focus{
+            outline: none;
+          }
+        }
+
+      }
+      .btn_block {
+        margin-top: 53px;
+        margin-bottom: 35px;
+        .btn_donate {
+          color: #fff;
+          background-color: #5B8F47;
+          border-color: #5B8F47;
+          font-size: 13px;
+          padding: 10px 34px;
+        }
+      }
+      .donate_title {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 14px;
+        color: #666666;
+        font-weight: 900;
+        @media(max-width: 620px){
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
+      }
+
+      .payment-img {
+        margin-top: 45px;
+      }
+    }
+  }
+
+}

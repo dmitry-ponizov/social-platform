@@ -1,0 +1,114 @@
+/*  Main page welcome block */
+
+#welcome_wrap {
+  margin-top: 80px;
+  @media (max-width: 992px) {
+    margin-top: 10px;
+  }
+  .welcome_column {
+
+    @media(min-width: 621px)and (max-width: 992px) {
+      padding: 15px 40px;
+    }
+
+    padding-left: 0;
+    .welcome_block {
+      width: 90%;
+      color: $grey;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #333333;
+      @media (max-width: 620px) {
+       text-align: center;
+        font-size: 4vw;
+      }
+      @media (min-width: 621px) and (max-width: 992px) {
+        text-align: center;
+      }
+      span {
+        color: $main-color;
+      }
+    }
+    .heading {
+      font-size: 18px;
+
+      @media (max-width: 620px) {
+        text-align: center;
+        font-size: 4vw;
+      }
+
+    }
+    .desc {
+      line-height: 1.8em;
+      @media (max-width: 620px) {
+        display: none;
+      }
+      //@media (min-width: 992px)and(max-width: 1378px) {
+      //  display: none;
+      //}
+    }
+    .link_container {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      @media (max-width: 620px) {
+        display: none;
+      }
+      @media (min-width: 992px)and(max-width: 1378px) {
+        display: block;
+      }
+      i {
+        font-size: 15px;
+        color: $main-color;
+      }
+
+      div {
+        div {
+          margin-top: 13px;
+        }
+
+        a {
+          margin-left: 10px;
+          color: $grey;
+          letter-spacing: 0.7px;
+          &:hover {
+            color: $color-head;
+          }
+        }
+      }
+    }
+
+    .welcome_button {
+      text-transform: uppercase;
+      background-color: $main-color;
+      color: #fff;
+      padding: 13px 26px;
+      border-radius: 6px;
+      font-size: 12px;
+      text-decoration: none;
+
+      @media (max-width: 620px) {
+        margin-left: 30px;
+      }
+
+      &:hover {
+        background-color: #456d36;
+        border-color: #416633;
+
+      }
+    }
+    .btn_container {
+      margin-top: 30px;
+      @media (max-width: 620px) {
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+  }
+}

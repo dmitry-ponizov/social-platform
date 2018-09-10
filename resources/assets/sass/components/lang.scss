@@ -1,0 +1,70 @@
+#lang_menu {
+  .menu {
+    background-color: $color-head;
+    border: none;
+    box-shadow: none;
+    z-index: 21;
+    .item {
+      color: #fff !important;
+      &:hover {
+        color: #0d71bb;
+      }
+    }
+  }
+  border: none;
+  box-shadow: none;
+  background-color: $color-head;
+  div {
+    width: 61px;
+  }
+  i {
+    position: absolute;
+    right: 17px;
+  }
+  .ru {
+    position: relative;
+    text-align: right;
+
+    &:before {
+      content: '';
+      background: url(/uploads/defaults/icons/svg/russia.svg) no-repeat scroll;
+      //background-position: 0 -17px;
+      position: absolute;
+      left: 8px;
+      top: 11px;
+      width: 24px;
+      height: 17px;
+      display: inline-block;
+    }
+  }
+  .en {
+    position: relative;
+    text-align: right;
+    &:before {
+      content: '';
+      background: url(/uploads/defaults/icons/svg/united-kingdom.svg) no-repeat scroll;
+      //background-position: 0 0px;
+      position: absolute;
+      left: 8px;
+      top: 11px;
+      width: 24px;
+      height: 17px;
+      display: inline-block;
+    }
+  }
+  .ua {
+    position: relative;
+    text-align: right;
+    &:before {
+      content: '';
+      background: url(/uploads/defaults/icons/svg/ukraine.svg) no-repeat scroll;
+      //background-position: 0 -35px;
+      position: absolute;
+      left: 8px;
+      top: 11px;
+      width: 24px;
+      height: 17px;
+      display: inline-block;
+    }
+  }
+}

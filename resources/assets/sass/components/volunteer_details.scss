@@ -1,0 +1,78 @@
+//section {
+//  background: #f7f7f7;
+//}
+
+#volunteer_details_wrap {
+  padding: 60px 0;
+  .image_block {
+    img {
+      width: 100%;
+    }
+  }
+  .about_block {
+    h3 {
+      position: relative;
+      padding-bottom: 10px;
+      &:after {
+        bottom: -1px;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 50px;
+        background: $main-color;
+      }
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      li{
+        .contact_block{
+          padding: 15px;
+          margin-bottom: 20px;
+          background-color: #f5f5f5;
+          border-bottom: 1px solid #eeeeee;
+          display: flex;
+          p{
+            color:#666666;
+            font-size: 13px;
+          }
+          i{
+            font-size: 20px;
+            color: $main-color;
+          }
+          :first-child{
+            padding-right: 7px;
+
+          }
+        }
+      }
+    }
+  }
+  .description_block {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          height: 30px;
+          line-height: 30px;
+          margin: 2px 7px 2px 0;
+          width: 30px;
+          background-color: #5B8F47;
+          color: #fff;
+
+          &:hover {
+            background-color: #456d36;
+            color: #e6e6e6;
+          }
+        }
+      }
+    }
+  }
+}

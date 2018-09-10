@@ -1,0 +1,85 @@
+$main-color: #5B8F47;
+
+//$color-head: #E41937;
+$color-head: #344c6e;
+$color-red:#E41937;
+$pa_color: #6f6f6f;
+$grey: #666666;
+$font-stack: 'Open Sans', sans-serif;
+
+@mixin pro-btn($color) {
+  font-family: Lato-Bold;
+  border: 1px solid $color;
+  border-radius: 2px;
+  font-weight: bold;
+  color: $color;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: none;
+  vertical-align: baseline;
+  margin: 0em 0.25em 0em 0em;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  text-transform: none;
+  text-shadow: none;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  //box-shadow:0 2px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  -webkit-tap-highlight-color: transparent
+
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+.btn{
+  @include pro-btn($main-color);
+
+  &:hover{
+    background-color: $main-color;
+    color: #fff;
+  }
+}
+body{
+  padding: 0!important;
+}
+#app_front{
+  width: 100%;
+  //overflow: hidden;
+  //max-width: 1920px;
+  margin: 0 auto;
+}
+.red {
+  color: #E41937 !important;
+}
+
+.green {
+  color: $main-color !important;
+}
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bold {
+  font-weight: 900;
+}
+

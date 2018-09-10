@@ -1,0 +1,70 @@
+#register-modal {
+  bottom: auto;
+  top: 15%;
+  overflow: visible;
+  max-width: 816px;
+  .register-form{
+    @media(min-width:621px) and (max-width: 992px){
+      padding-right: 100px;
+    }
+  }
+  .actions {
+    min-height: 50px;
+  }
+  .register-field {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.3125rem;
+    margin-top: 15px;
+    align-items: center;
+    @media(max-width: 620px){
+      flex-direction: column;
+      align-items: left;
+    }
+    //@media(min-width: 621px) and (max-width: 992px){
+    //  justify-content: center;
+    //}
+  }
+  input {
+    width: 300px;
+    @media(max-width: 620px){
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  select{
+    @media(max-width: 620px){
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  .text-danger {
+    color: $color-red;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  #register {
+    color: #fff;
+    background: $main-color;
+  }
+}
+
+.rules_fields {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+#rules_fields_wrap {
+  margin-right: 20px;
+  input, textarea {
+    width: 250px;
+  }
+  label {
+    margin-right: 20px;
+  }
+
+}

@@ -1,0 +1,21 @@
+.statement_form_wrap {
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  margin-bottom: 50px;
+
+  h3 {
+    color: $main-color;
+  }
+
+}
+
+.create_statement_block {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  #create_statement {
+    background-color: $main-color;
+    color: #fff;
+    margin-top: 20px;
+  }
+}

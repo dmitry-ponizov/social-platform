@@ -1,0 +1,150 @@
+/*  Main page banner */
+
+#banner_wrap {
+  height: 160px;
+  @media (max-width: 1378px) {
+    display: none;
+  }
+  .banner_container {
+    position: relative;
+  }
+  .row {
+    position: absolute;
+    top: -135px;
+    left: 15px;
+    //@media (max-width: 620px) {
+    //  top: 0px;
+    //  left: 0px;
+    //}
+  }
+  .left_banner {
+    min-height: 286px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 24px;
+      margin-top: 35px;
+      margin-left: 15px;
+    }
+    .content_block {
+      display: flex;
+
+    }
+    .second {
+      margin-top: 10px;
+    }
+    .image_block {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-left: 27px;
+      margin-top: 8px;
+
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+    }
+    .heading_block {
+      color: #fff;
+      margin-top: 8px;
+      margin-left: 40px;
+
+      span {
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 600;
+        line-height: 1.42857143;
+        font-size: 18px;
+      }
+      p {
+        line-height: 23px;
+      }
+
+    }
+  }
+
+  .right_banner {
+    min-height: 286px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      color: #fff;
+      margin-left: 17px;
+    }
+
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 24px;
+      margin-top: 35px;
+      margin-left: 15px;
+    }
+    .sum {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px 20px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+
+    }
+    .donate_btn {
+      font-size: 12px;
+      padding: 8px 19px;
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      line-height: 1.5;
+      border-radius: 3px;
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        background-color: #456d36;
+        border-color: #416633;
+      }
+    }
+  }
+
+  .causes {
+    margin: 20px;
+    .progress_main {
+      background-color: #fff;
+    }
+    .progress_bar {
+      width: 84%;
+      background-color: $main-color;
+      position: relative;
+      height: 14px;
+    }
+    .precent {
+      height: 36px;
+      width: 36px;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      right: -16px;
+      bottom: -9px;
+      font-size: 10px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+
+}

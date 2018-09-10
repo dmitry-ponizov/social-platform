@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("fonts/Lato/Lato-Bold.ttf") format("truetype");
+}
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "./variables";
+@import "./components/statements";
+@import "./components/statement";
+@import "./components/login";
+@import "./components/donate";
+@import "./components/finance_slider";
+@import "./components/show_statement";
+@import "./components/header";
+@import "./components/login_modal";
+@import "./components/register_modal";
+@import "./components/create_statement";
+@import "./components/personal_area";
+@import "./components/lang";
+@import "./components/agile_slider";
+@import "./components/banner";
+@import "./components/welcome_block";
+@import "./components/acrions";
+@import "./components/statements_block";
+@import "./components/statistics";
+@import "./components/footer";
+@import "./components/statements_list";
+@import "./components/quick_donate";
+@import "./components/pagination";
+@import "./components/add_documents_organization";
+@import "./components/substatements";
+@import "./components/tabs";
+@import "./components/volunteers";
+@import "./components/become_volunteer";
+@import "./components/organization_details";
+@import "./components/volunteer_details";
+@import "./components/organizations";
+@import "./components/organization-events";
+@import "./components/partners";

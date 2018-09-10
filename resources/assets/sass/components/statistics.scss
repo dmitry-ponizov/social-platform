@@ -1,0 +1,46 @@
+/*  Main page statistic block */
+
+#statistics {
+
+  display: flex;
+  justify-content: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  @media (max-width: 620px) {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  svg {
+    width: 37px;
+    path, circle, rect, polygon {
+      fill: #fff;
+    }
+  }
+  .statistic {
+    text-align: center;
+    color: #fff;
+    width: 25%;
+    @media (max-width: 620px) {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+    h5 {
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 0;
+      margin-left: 10px;
+      @media (max-width: 620px) {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
